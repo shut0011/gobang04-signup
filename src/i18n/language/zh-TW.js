@@ -1,0 +1,41 @@
+export default {
+    'setting': '設置',
+    'change': '日志',
+    'hello': '你好',
+    'title': '五子棋',
+    'settings': '設置',
+    'changes': '更新日志',
+    'lang': '語言',
+    'search deep': '思考深度',
+    'idiot': '萌新',
+    'easy': '簡單',
+    'normal': '普通',
+    'hard': '高阶',
+    'difficult': '困難',
+    'start': '開始',
+    'give': '認輸',
+    'forward': '前進',
+    'backward': '後退',
+    'show steps': '顯示序號',
+    'step spread': '單步延伸',
+    'home': '首頁',
+    'about': '關于',
+    'status': {
+        'loading': '正在加載...',
+        'start': '請點擊 `開始` 按鈕',
+        'thinking': '正在思考...',
+        'playing': '分數 {score}, 步數: {step}, 時間: {time}'
+    },
+    'you lose': '你輸了',
+    'you win': '你贏了',
+    'dialog': {
+        'chooseOffensiveTitle': '選擇先手',
+        'chooseOffensiveBody': '誰是先手下子？',
+        'me': '我',
+        'xuanxuan': '電腦',
+        'giveTitle': '認輸?',
+        'giveBody': '你確定認輸嗎?',
+        'ok': '確認',
+        'cancel': '取消'
+    }
+}

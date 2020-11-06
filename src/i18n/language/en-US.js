@@ -1,0 +1,41 @@
+export default {
+    'setting': 'Setting',
+    'change': 'Change',
+    'hello': 'hell',
+    'title': 'Gobang',
+    'settings': 'Settings',
+    'changes': 'Changelog',
+    'lang': 'Language',
+    'search deep': 'Search Deep',
+    'idiot': 'Idiot',
+    'easy': 'Easy',
+    'normal': 'Normal',
+    'hard': 'Hard',
+    'difficult': 'Difficult',
+    'start': 'START',
+    'give': 'GIVE',
+    'forward': 'FWD',
+    'backward': 'BWD',
+    'show steps': 'Show Steps',
+    'step spread': 'Step Spread',
+    'home': 'Home',
+    'about': 'About',
+    'status': {
+      'loading': 'Loading...',
+      'start': 'Click `Start` Button',
+      'thinking': 'Thinking...',
+      'playing': 'Score {score}, Step: {step}, Time: {time}'
+    },
+    'you lose': 'You Lose',
+    'you win': 'You Win',
+    'dialog': {
+      'chooseOffensiveTitle': 'Choose Offensive',
+      'chooseOffensiveBody': 'Who is to go on the offensive?',
+      'me': 'Me',
+      'xuanxuan': 'Computer',
+      'giveTitle': 'Give up?',
+      'giveBody': 'Are you sure to give up?',
+      'ok': 'OK',
+      'cancel': 'Cancel'
+    }    
+}
