@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-//import Home from '../views/Home.vue'
-
 const Home = () => import('views/home/Home.vue')
 const Setting = () => import('views/setting/Setting.vue')
 const Change = () => import('views/change/Change.vue')
