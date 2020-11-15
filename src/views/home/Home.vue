@@ -25,13 +25,13 @@
       <div class="weui-flex__item">
         <a href="javascript:;"
           @click="backward"
-          :class="'weui-btn weui-btn_plain-primary ' + (canBackward ? '' : 'weui-btn_plain-disabled')"
+          :class="'weui-btn weui-btn_primary ' + (canBackward ? '' : 'weui-btn_disabled')"
           ><Icon class="arrow" name="arrow-left" :style="canBackwardStyle"/>
         </a>
       </div>
       <div class="weui-flex__item">
         <a href="javascript:;"
-          :class="'weui-btn weui-btn_plain-primary ' + (canForward ? '' : 'weui-btn_plain-disabled')"
+          :class="'weui-btn weui-btn_primary ' + (canForward ? '' : 'weui-btn_disabled')"
           @click="forward"
           ><Icon class="arrow" name="arrow-right" :style="canForwardStyle"/>
         </a>
@@ -120,5 +120,15 @@ h1 {
   &.white {
     background-color: white;
   }
+}
+
+.home {
+  background-image: url(/timg.jpg);
+  background-repeat: no-repeat;
+  background-color: #b8e5f8;
+  background-size: 110%;
+  background-position: center;
+  height: 100vh;
+  overflow: auto
 }
 </style>

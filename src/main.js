@@ -7,6 +7,9 @@ import i18n from './i18n';
 import 'weui/dist/style/weui.min.css'
 import 'assets/css/reset.scss'
 
+import './plugins/element.js'
+import './assets/styles/main.scss'
+
 Vue.config.productionTip = false;
 
 new Vue({

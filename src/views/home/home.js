@@ -143,11 +143,11 @@ export default {
     }),
 
     canBackwardStyle() {
-      return !this.canBackward ? {fill: "yellow"} : {fill: "blue"}
+      return !this.canBackward ? {fill: "grey"} : {fill: "blue"}
     },
 
     canForwardStyle() {
-      return !this.canForward ? {fill: "yellow"} : {fill: "blue"}
+      return !this.canForward ? {fill: "grey"} : {fill: "blue"}
     }
 
   },

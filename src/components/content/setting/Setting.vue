@@ -43,6 +43,7 @@
         </div>
       </div>
     </div>
+    <el-button class="logout-btn" @click="logout()">退出登录</el-button>
     <div class="weui-footer">
       <p class="weui-footer__links">
         <a href="https://gobang" target="_blank" class="weui-footer__link">Github</a>
@@ -57,6 +58,7 @@
 import { mapState, mapActions} from 'vuex'
 import { SET_DEEP, SET_LANG, SET_SHOW_STEPS, SET_SPREAD } from 'store/modules/home/mutations-type.js'
 import i18n from 'i18n/index.js'
+import request from '@/service'
 
 export default {
   name: 'Setting',
@@ -93,6 +95,18 @@ export default {
     setSpread (e) {
       let value = e.target.checked
       this.$store.dispatch('home/' + SET_SPREAD, value)
+    },
+    async logout() {
+      await request.post('/users/logout').then((res) => {
+        if (res.status === 200) {
+          this.$Message.success('注销成功')
+          this.name = ''
+          this.$router.push({ name: 'signup' })
+        } else {
+          this.$Message.error('注销失败，请稍后再试')
+        }
+      })
+      console.log('登出')
     }
   }
 }
@@ -147,6 +161,12 @@ h1 {
 
 .weui-switch-cp__input:checked~.weui-switch-cp__box:after, .weui-switch:checked:after {
     transform: translateX(30px);
+}
+
+.logout-btn {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 1px;
 }
 
 </style>

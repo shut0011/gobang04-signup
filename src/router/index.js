@@ -7,6 +7,8 @@ const Home = () => import('views/home/Home.vue')
 const Setting = () => import('views/setting/Setting.vue')
 const Change = () => import('views/change/Change.vue')
 const About = () => import('views/about/About.vue')
+const Page = () => import('views/page/Page.vue')
+const SignUp = () => import('views/signup/SignUp.vue')
 
 Vue.use(VueRouter)
 
@@ -22,23 +24,30 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '',
-    redirect: '/home'
+    redirect: '/home',
+    component: Page,
+    children: [{
+      path: '/home',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/setting',
+      component: Setting
+    },
+    {
+      path: '/change',
+      component: Change
+    },
+    {
+      path: '/about',
+      component: About
+    }]
   },
   {
-    path: '/home',
-    component: Home
-  },
-  {
-    path: '/setting',
-    component: Setting
-  },
-  {
-    path: '/change',
-    component: Change
-  },
-  {
-    path: '/about',
-    component: About
+    path: '/signup',
+    name: 'signup',
+    component: SignUp
   }
 ]
 
