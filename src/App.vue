@@ -17,8 +17,8 @@
       MainTabBar
     },
     mounted() {
-      console.log('app mounted')
-      //this.setLocal = this.$i18n.locale
+      // console.log('app mounted')
+      this.setLocal = this.$i18n.locale
     }
     
   }

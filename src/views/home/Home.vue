@@ -122,13 +122,4 @@ h1 {
   }
 }
 
-.home {
-  background-image: url(/timg.jpg);
-  background-repeat: no-repeat;
-  background-color: #b8e5f8;
-  background-size: 110%;
-  background-position: center;
-  height: 100vh;
-  overflow: auto
-}
 </style>

@@ -48,4 +48,14 @@ export default {
 <style>
 @import "../../assets/css/base.css";
 
+#app {
+  background-image: url(/timg.jpg);
+  background-repeat: no-repeat;
+  background-color: #b8e5f8;
+  background-size: 120%;
+  background-position: center;
+  height: 100vh;
+  overflow: auto
+}
+
 </style>

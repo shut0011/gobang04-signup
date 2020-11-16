@@ -53,7 +53,7 @@
 </script>
 
 <style scoped>
-  a {
-    color: blue;
-  }
+a {
+  color: blue;
+}
 </style>

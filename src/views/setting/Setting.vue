@@ -3,16 +3,14 @@
 </template>
 
 <script>
-  import Setting from 'components/content/setting/Setting'
+import Setting from 'components/content/setting/Setting'
 
-  export default {
-    name: "Setting-page",
-    components: {
-      Setting
-    }
-  
+export default {
+  name: "Setting-page",
+  components: {
+    Setting
   }
-
+}
 </script>
 
 <style scoped>

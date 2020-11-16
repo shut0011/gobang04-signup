@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="change">
     <article class="weui-article">
       <h1>更新日志</h1>
       <section>

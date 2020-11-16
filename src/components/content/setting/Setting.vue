@@ -1,7 +1,9 @@
 <template>
-  <div class="hello">
-    <h1>{{$t('setting')}}</h1>
-
+  <div class="setting-class">
+    <!-- <el-button class="logout-btn">退出登录</el-button> -->
+    <article class="weui-article">
+      <h1>{{$t('setting')}}</h1>
+    </article>
     <div class="weui-cells">
       <div class="weui-cell weui-cell_select weui-cell_select-after">
         <div class="weui-cell__hd">
@@ -115,10 +117,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import 'assets/css/variables';
+
 h1 {
-  font-size: 22px;
+  font-size: 20px;
   color: $primary-color;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .operations {

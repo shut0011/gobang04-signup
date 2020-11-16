@@ -6,8 +6,7 @@ var ai = new AI()
 
 self.onmessage = function(e) {
   var d = e.data
-  console.log('bridge get message: ')
-  console.log(d)
+  console.log('bridge get message: e =', e)
   if(d.type == "START") {
     const open = ai.start(d.random)
     postMessage({
