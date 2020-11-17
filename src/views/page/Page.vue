@@ -42,7 +42,6 @@ export default {
     }    
   }
 }
-
 </script>
 
 <style>
@@ -57,5 +56,4 @@ export default {
   height: 100vh;
   overflow: auto
 }
-
 </style>
